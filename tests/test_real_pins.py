@@ -53,7 +53,7 @@ try:
 except ImportError:
     RPIOPin = None
 try:
-    from gpiozero.pins.pigpiod import PiGPIOPin
+    from gpiozero.pins.pigpio import PiGPIOPin
     PIN_CLASSES.append(PiGPIOPin)
 except ImportError:
     PiGPIOPin = None
